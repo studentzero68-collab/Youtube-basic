@@ -184,3 +184,49 @@ body {
     font-weight: 400;
     margin-bottom: 20px;
 }
+/* VIDEO GRID */
+.videos {
+    width: calc(100vw - 240px);
+    height: 100%;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    overflow-y: scroll;
+}
+.video-grid {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.video {
+    width: calc(25% - 12px);
+    margin-right: 12px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.video .thumbnail img {
+    width: 100%;
+}
+.videos .details {
+    display: flex;
+    margin-top: 5px;
+    width: 90%;
+}
+.video .profile {
+    margin-right: 12px;
+}
+.video .profile img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.video .video-details p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--text-primary);
+}
+.video .posted-by {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
