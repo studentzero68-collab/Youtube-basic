@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*THEME VARIABLES  */
+:root {
+    --bg-primary:   #ffffff;
+    --bg-secondary: #f9f9f9;
+    --bg-active:    #d0d0d0;
+    --bg-hover:     #f0f0f0;
+    --text-primary: #000000;
+    --text-muted:   #606060;
+    --border-color: #cccccc;
+    --navbar-bg:    #ffffff;
+    --icon-color:   #606060;
+    --active-icon:  red;
+}
+
+/*DARK MODE */
+[data-theme="dark"] {
+    --bg-primary:   #212121;
+    --bg-secondary: #181818;
+    --bg-active:    #3f3f3f;
+    --bg-hover:     #3f3f3f;
+    --text-primary: #e0e0e0;
+    --text-muted:   #aaaaaa;
+    --border-color: #3f3f3f;
+    --navbar-bg:    #212121;
+    --icon-color:   #aaaaaa;
+    --active-icon:  #ff4444;
+}
+
+/* BASE */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
