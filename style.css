@@ -40,3 +40,71 @@ body {
     background: var(--bg-secondary);
     color: var(--text-primary);
 }
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background: var(--navbar-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+.navbar .searchbar {
+    display: flex;
+    height: 32px;
+    align-items: center;
+}
+.search {
+    display: flex;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    width: 600px;
+    margin-right: 10px;
+    height: 100%;
+}
+.search input {
+    border: none;
+    width: 90%;
+    padding-left: 10px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    outline: none;
+}
+.search button {
+    border: none;
+    border-left: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    width: 10%;
+    cursor: pointer;
+}
+.search button i {
+    margin: 0;
+}
+
+/* ICONS */
+.material-icons {
+    color: var(--icon-color);
+    margin-right: 10px;
+}
+
+/* THEME TOGGLE BUTTON */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+}
