@@ -249,3 +249,50 @@ body {
     font-weight: 500;
     color: var(--text-muted);
 }
+/* SHORTS */
+.shorts-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.short {
+    flex: 0 0 160px;
+    cursor: pointer;
+}
+.short-thumbnail {
+    position: relative;
+    width: 160px;
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.short-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.short-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.short-details {
+    padding: 6px 0;
+}
+.short-details p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+.short-details span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
