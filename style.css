@@ -32,6 +32,11 @@
     --navbar-bg:    #212121;
     --icon-color:   #aaaaaa;
     --active-icon:  #ff4444;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+:root {
+    --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 /* BASE */
@@ -221,6 +226,10 @@ body {
     width: 300px;
     cursor: pointer;
     margin-bottom: 0;
+    transition: transform 0.3s ease;
+}
+.video-row .video:hover {
+    transform: scale(1.05);
 }
 .video-row .thumbnail img {
     width: 100%;
@@ -229,6 +238,10 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.video-row .video:hover .thumbnail img {
+    box-shadow: 0 8px 16px var(--shadow-color);
 }
 .videos .details {
     display: flex;
@@ -273,6 +286,10 @@ body {
     flex: 0 0 172px;
     width: 172px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.short:hover {
+    transform: scale(1.05);
 }
 .short-thumbnail {
     position: relative;
@@ -280,6 +297,10 @@ body {
     aspect-ratio: 9 / 16;
     border-radius: 12px;
     overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.short:hover .short-thumbnail {
+    box-shadow: 0 8px 16px var(--shadow-color);
 }
 .short-thumbnail img {
     width: 100%;
