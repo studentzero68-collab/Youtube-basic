@@ -192,19 +192,38 @@ body {
     border-top: 1px solid var(--border-color);
     overflow-y: scroll;
 }
-.video-grid {
+.video-section {
+    padding: 15px 15px 0;
+    margin-bottom: 24px;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+.video-row {
     display: flex;
-    padding: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
 }
-.video {
-    width: calc(25% - 12px);
-    margin-right: 12px;
+.video-row .video {
+    flex: 0 0 300px;
+    width: 300px;
     cursor: pointer;
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
-.video .thumbnail img {
+.video-row .thumbnail img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
 }
 .videos .details {
     display: flex;
